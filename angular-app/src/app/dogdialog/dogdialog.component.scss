@@ -1,0 +1,26 @@
+.passwordfield,.usernamefield{
+width: 100%;
+}
+
+.top-row-field{
+  width: 33.33333%;
+}
+
+.dialog-buttons {
+  display: flex;
+  position: absolute;
+  right: 30px;
+  top: 17px;
+  button{
+    transform: scale(0.65);
+  }
+}
+
+.warning-message{
+  text-align: right;
+  position: absolute;
+  right: 165px;
+  top: 31px;
+  font-size: 14px;
+  color: red;
+}

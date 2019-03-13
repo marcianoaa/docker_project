@@ -1,0 +1,20 @@
+<h1 mat-dialog-title>{{data.title}}</h1>
+<div mat-dialog-content>
+    <mat-form-field class='top-row-field'>
+      <input required='true' [(ngModel)]="data.dogid" matInput placeholder='Dog ID'/>
+    </mat-form-field>
+    <mat-form-field class='top-row-field'>
+        <input required='true' [(ngModel)]="data.name" matInput placeholder='Name'/>
+      </mat-form-field>
+    <mat-form-field class='top-row-field'>
+      <input required='true' [(ngModel)]="data.breed"  matInput placeholder='Breed'/>
+    </mat-form-field>
+    <mat-form-field class='top-row-field'>
+        <input required='true' [(ngModel)]="data.gender"  matInput placeholder='Gender'/>
+      </mat-form-field>
+
+  <div class='dialog-buttons'>
+    <button mat-mini-fab *ngFor='let button of data.buttons' [ngStyle]="{'background-color': button.color}" (click)='buttonRouter(button.icon)' ><mat-icon>{{ button.icon }}</mat-icon></button>
+  </div>
+  <div class='warning-message'>{{ message }}</div>
+</div>

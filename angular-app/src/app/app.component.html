@@ -1,0 +1,45 @@
+<header class="app-header">
+  <h2 class='app-title'>Dogs Database</h2>
+  <button matTooltip="Add Dog" [matTooltipPosition]="position.value" mat-mini-fab class='new-dog-button' color='indianred' (click)="newDog()">
+    <mat-icon>
+      add
+    </mat-icon>
+  </button>
+</header>
+  <table mat-card matSort mat-table [dataSource]="dogs" class="mat-elevation-z8">
+    <!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+
+  <ng-container matColumnDef="id">
+    <th mat-sort-header mat-header-cell *matHeaderCellDef> ID</th>
+    <td mat-cell *matCellDef="let element"></td>
+  </ng-container>
+
+  <!-- Position Column -->
+  <ng-container matColumnDef="dogid">
+      <th mat-sort-header mat-header-cell *matHeaderCellDef>Dog ID</th>
+      <td mat-cell *matCellDef="let element"> <a (click)="copyThis(element.dogid);$event.stopPropagation()">{{element.dogid}}</a> </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <th mat-sort-header mat-header-cell *matHeaderCellDef>Name</th>
+      <td mat-cell *matCellDef="let element"><a (click)="copyThis(element.name);$event.stopPropagation()"> {{element.name}}</a> </td>
+    </ng-container>
+
+    <ng-container matColumnDef="breed">
+      <th mat-sort-header mat-header-cell *matHeaderCellDef> Breed </th>
+      <td mat-cell *matCellDef="let element"><a (click)="copyThis(element.breed);$event.stopPropagation()"> {{element.breed}} </a></td>
+    </ng-container>
+
+    <ng-container matColumnDef="gender">
+      <th mat-sort-header mat-header-cell *matHeaderCellDef> Gender </th>
+      <td mat-cell *matCellDef="let element"> <a (click)="copyThis(element.gender);$event.stopPropagation()">{{element.gender}} </a></td>
+    </ng-container>
+
+
+    <tr mat-card-title mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-card-content mat-row *matRowDef="let row; columns: displayedColumns" (click)='editDog(row)'></tr>
+
+  </table>
+

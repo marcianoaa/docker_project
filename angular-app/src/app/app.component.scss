@@ -1,0 +1,104 @@
+h2{
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-weight: 100;
+  font-family: 'Noto Serif SC', serif;
+  text-shadow: 6px 2px 5px rgba(0,0,0,0.5);
+}
+header{
+  width: 100%;
+  h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: left;
+    text-transform: uppercase;
+    font-size: 28px;
+    letter-spacing: 4px;
+    font-weight: 100;
+  }
+  button{
+    position: relative;
+    float: right;
+    top: 10px;
+    background: indianred;
+    color: black;
+    transform: scale(0.65);
+    mat-icon{
+      color: white;
+    }
+    span{
+      color: white;
+    }
+    i{
+      font-size: 18px;
+      color: rgba(255,255,255,0.5);
+      position: relative;
+      right: 5px;
+      bottom: 1px;
+    }
+  }
+}
+
+td {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+
+table{
+  width: 100%;
+  overflow: hidden;
+  td,th{
+    text-align: center;
+  }
+}
+
+tr.mat-header-row {
+  background: rgba(0,0,0,0.1);
+
+  th{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 1px;
+  }
+}
+
+tr:hover {
+  cursor: pointer;
+  background: rgba(148, 102, 102, 0.452);
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+  a{
+    color: white;
+  }
+
+}
+tr{
+  a{
+    padding: 3px 10px;
+    font-weight: 100;
+    border-radius: 4px;
+  }
+  a:hover{
+    background: rgba(255,255,255,0.5);
+    color: black;
+  }
+}
+
+.mat-snack-bar{
+  color:indianred;
+}
+
+.snack-alert{
+  width: auto;
+  background: #000;
+  span{
+    color: white;
+    font-weight: 100;
+    letter-spacing: 2px;
+  }
+}
+
+.mat-column-id{
+  display: none;
+}
