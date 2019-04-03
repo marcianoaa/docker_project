@@ -1,0 +1,4 @@
+use admin
+db.dogs.insert({dogid: "001", name: "Frodo", breed: "Lab", gender: "Male"})
+db.dogs.insert({dogid: "002", name: "Sparky", breed: "Dalmation", gender: "Male"})
+db.dogs.insert({dogid: "003", name: "Princess", breed: "Westie", gender: "Female"})

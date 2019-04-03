@@ -59,7 +59,7 @@ export class DogsService {
       });
   }
 
-  updateDog(iD: string, dogid: string, name: string, breed: string, gender: string, dog: string) {
+  updateDog(iD: string, dogid: string, name: string, breed: string, gender: string) {
     const post: Dog = {
       id: iD,
       dogid: dogid,

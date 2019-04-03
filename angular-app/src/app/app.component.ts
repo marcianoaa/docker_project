@@ -90,8 +90,8 @@ export class AppComponent implements OnInit {
               result.dogid,
               result.name,
               result.breed,
-              result.gender,
-              this.alert.open('Dog Updated', '', {duration: 1500, panelClass: ['snack-alert']}));
+              result.gender)
+              this.alert.open('Dog Updated', '', {duration: 1500, panelClass: ['snack-alert']});
       }
       });
   }

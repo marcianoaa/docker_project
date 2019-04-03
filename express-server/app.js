@@ -8,7 +8,7 @@ const Dog = require("./models/dog");
 function startServer(){
   mongoose
     .connect(
-      'mongodb://localhost:27017/admin',
+      'mongodb://mongodb:27017/admin',
       { useNewUrlParser: true,
         reconnectTries: Number.MAX_VALUE
       }

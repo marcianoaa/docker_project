@@ -21,4 +21,5 @@ services:
   build: angular-app # specify the directory of the Dockerfile
   ports:
   - "4200:4200" # specify port mapping
+
   
