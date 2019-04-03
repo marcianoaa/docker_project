@@ -1,11 +1,12 @@
 # Choice of Container Management
 Name: Angelena Marciano // Course: CSCI 459
+Docker
 
 
 # Context: 
 
-Build a docker image and container using docker-compose in order to display a web page with data to the browser.
-
+Build a docker image and container set using Ansible plabook instead of docker-compose file in order to run application and display a web page with data to the browser.
+In order to better manage each part of the App, Docker Compose allows for the three separate parts to exist individually in containers that link/communicate with each other.
 
 # Decision:
 
@@ -16,7 +17,7 @@ Since I have never used it before, I was nervous testing it out with my personal
 
 # Consequences: 
 
-I struggled at certain points throughout testing and building my docker-compose file, running into many errors throughout the way and being unable to run my web app as I wanted. 
-After working out some kinks in my code due to making changes to the template, I was able to finally get my docker-cmopose file running when you when you run the code 'docker-compose up' in the terminal under the folder.
+I struggled at certain points throughout testing and building my Ansible playbook file, running into many errors throughout the way and being unable to run my web app as I wanted.
+After working out some kinks in my code due to making changes to the template, I was able to finally get my Ansible file running using the command 'ansible-playbook -v StartupPlaybook.yaml' in the terminal under the folder to start and load all of my specified tasks. All of my containers/images/other tasks all complete with no errors or failure now.
 
 
