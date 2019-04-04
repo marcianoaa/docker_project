@@ -9,6 +9,8 @@ Build a docker image and container set using Ansible plabook instead of docker-c
 Express is a library of sequential middlewares that run on a NodeJS server. This allows you to define your own API for the client to interface with. 
 Mongoose is a node dependency that makes it very easy to add CRUD features that interact with MongoDB.
 
+The node express server allows you to output specific messages with the command 'console.log()', which in turn makes messaging between layers easy and descriptive. Based on requests to the REST API, you can build custom messages depending on the route and type of HTTP request (POST, GET, PUT, etc)
+
 # Decision:
 
 I chose to use Express JS as my web server with my angular application for a few reaons. 
